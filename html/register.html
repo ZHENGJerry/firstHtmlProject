@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>注册果仁通行证</title>
+<!-- <link rel="stylesheet" href="../js/jquery-1.11.3.js" /> -->
+<link rel="stylesheet" href="../css/zhuce_css.css" type="text/css" />
+<link rel="stylesheet" href="../css/bootstrap.css" />
+<link rel="stylesheet" href="../js/bootstrap.min.js" />
+<script src="../js/jquery-3.1.0.min.js" type="text/javascript"/></script>
+<script src="../js/zhuce.js"></script>
+<script src="../js/regester.js"></script>
+<script src="../js/js.KinerCode.js"></script>
+<script type="text/javascript" src="../js/base.js"></script>
+<link href="../images/logo2.png" rel="shortcut icon">
+<script type="text/javascript">
+    $(function(){
+        $("#submit").click(function(){
+            alert("欢迎来到果仁儿世界，您将拥有一棵果仁树，请好好昭看她哦！！");
+        });
+        $("#submit1").click(function(){
+            alert("欢迎来到果仁儿世界，您将拥有一棵果仁树，请好好昭看她哦！！");
+        });
+    });
+</script>
+</head>
+
+<body>
+
+	<div id="all">
+        <div id="container" class="container theme-showcase" role="main">
+ 		<!--头-->
+            <div id="head">
+                <div id="head_center">
+                    <div id="logo"><img src="../images/logo.gif"/></div>
+                    <div id="help">            	
+                        <a href="../index.html">首页</a>|<a href="help.html" target="_blank">帮助</a>
+                     </div>
+                </div>
+            </div>
+        
+        <center><hr id="line_1" align="center" size="1"/></center>
+        <!--主内容区域-->
+        <div id="main">
+        		<!--覆盖用-->
+                <div id="cover1"></div><div id="cover2"></div>
+        
+        <!--主内容顶端-->
+        	<div id="main_top">
+            	<div id="main_tab">
+                	<a id="phone" href="javascript:coveremail()">手机注册</a><a href="javascript:coverphone()" id="email">邮箱注册</a>
+                </div>
+            </div>
+            
+            
+            
+            <!--主区域左半部分-->
+            <div id="main_left">
+            	<!--手机注册-->
+            	<div id="reg_phone">
+            		<form id="form_ph" name="form_ph" action="#" method="post" enctype="multipart/form-data">
+                        <table id="table_ph" >
+                            <tr>
+                                <td class="tdr"><span>*</span>手机号码：</td>
+                                <td width="250px"><input type="text" id="phonenum" name="phonenum"/></td>
+                                <td class="tdl" width="200px"><span id="spanpn"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="tdr"><span>*</span>设置密码：</td>
+                                <td><input type="password" id="password" name="password"/></td>
+                                <td class="tdl"><span title="密码长度大于八位，可以含有下划线、数字、字母和大写字母" style="color:black;" id="qiangdu">密码说明</span><div id="qiangdu1"><img src="/images/ruo.png"/></div><div id="qiangdu2"><img src="/images/zhong.png"/></div><div id="qiangdu3"><img src="/images/qiang.png"/></div><span id="spanpsd"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="tdr"><span>*</span>确认密码：</td>
+                                <td><input type="password" id="password1" name="password1"/></td>
+                                <td class="tdl"><span id="spanpsd1"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="tdr"><span>*</span>设置标签：</td>
+                                <td colspan="2">
+                                <input class="chk_int" type="checkbox" name="hobbies[]" value="23" />新闻
+                                <input class="chk_int" type="checkbox" name="hobbies[]" value="18" />娱乐
+                                <input class="chk_int" type="checkbox" name="hobbies[]" value="24" />文化
+                                <input class="chk_int" type="checkbox" name="hobbies[]" value="10" />体育
+                                <input class="chk_int" type="checkbox" name="hobbies[]" value="21" />IT<br/>
+                                <input class="chk_int" type="checkbox" name="hobbies[]" value="12" />财经
+                                <input class="chk_int" type="checkbox" name="hobbies[]" value="25" />时尚
+                                <input class="chk_int" type="checkbox" name="hobbies[]" value="14" />汽车
+                                <input class="chk_int" type="checkbox" name="hobbies[]" value="6"  />房产
+                                <input class="chk_int" type="checkbox" name="hobbies[]" value="26" />生活
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tdr"><span>*</span>发短信到手机：</td>
+                                <td colspan="2"><input type="text" id="regsent" name="regsent" placeholder="手机验证码"/><input type="button" id="sentmsg" value="免费获取验证码" onClick="time(this)"/></td>
+                                
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><a>《果仁网络服务使用协议》</a></td>
+                                <td class="tdl"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                	<button type="button" class="btn btn-warning" id="submit">注册</button><p id="haveAccount">已有账号，请<a href="login.html">登录</a>。</p>
+                                </td>
+                                <td class="tdl"></td>
+                            </tr>
+                            
+                        </table>
+                    </form>
+           		 </div>
+             <!--手机注册结束-->    
+             
+            <!--邮箱注册-->
+            <div id="reg_email">
+            		<form id="form_em" name="form_em" action="#" method="post" enctype="multipart/form-data">
+                        <table id="table_em">
+                            <tr>
+                                <td class="tdr"><span>*</span>邮箱地址：</td>
+                                <td width="250px"><input type="text" id="email_1" name="email_1"/></td>
+                                <td class="tdl" width="200px"><span id="email1"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="tdr"><span>*</span>设置密码：</td>
+                                <td><input type="password" id="password_em" name="password_em"/></td>
+                                <td class="tdl"><span title="密码长度大于八位，可以含有下划线、数字、字母和大写字母" style="color:black;" id="qiangdu_1">密码说明</span><div id="qiangdu1_1"><img src="/images/ruo.png"/></div><div id="qiangdu2_1"><img src="/images/zhong.png"/></div><div id="qiangdu3_1"><img src="/images/qiang.png"/></div><span id="spanempsd"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="tdr"><span>*</span>确认密码：</td>
+                                <td><input type="password" id="password1_em" name="password1_em"/></td>
+                                <td class="tdl"><span id="spanempsd1"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="tdr"><span>*</span>设置标签：</td>
+                                <td colspan="2">
+                                <input class="chk_int" type="checkbox" name="hobbies[]" value="23" />新闻
+                                <input class="chk_int" type="checkbox" name="hobbies[]" value="18" />娱乐
+                                <input class="chk_int" type="checkbox" name="hobbies[]" value="24" />文化
+                                <input class="chk_int" type="checkbox" name="hobbies[]" value="10" />体育
+                                <input class="chk_int" type="checkbox" name="hobbies[]" value="21" />IT<br/>
+                                <input class="chk_int" type="checkbox" name="hobbies[]" value="12" />财经
+                                <input class="chk_int" type="checkbox" name="hobbies[]" value="25" />时尚
+                                <input class="chk_int" type="checkbox" name="hobbies[]" value="14" />汽车
+                                <input class="chk_int" type="checkbox" name="hobbies[]" value="6"  />房产
+                                <input class="chk_int" type="checkbox" name="hobbies[]" value="26" />生活
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tdr"><span>*</span>验证码：</td>
+                                <td><input type="text" id="inputCode"/></td>
+                                <td class="tdl"><span id="code" class="mycode"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="tdr"></td>
+                                <td><a>《果仁网络服务使用协议》</a></td>
+                                <td class="tdl"></td>
+                            </tr>
+                            <tr>
+                                <td class="tdr"></td>
+                                <td>
+                                <button type="button" class="btn btn-warning" id="submit1">注册</button><p id="haveAccount">已有账号，请<a href="login.html">登录</a>。</p>
+                                </td>
+                                <td class="tdl"></td>
+                            </tr>
+                        
+                        </table>
+                    </form> 
+            </div>
+            
+       		 <!--邮箱注册结束-->
+             
+             </div>
+             <!--主区域左半部分结束-->
+             
+        </div>
+       
+        
+        
+        
+        
+        <!--底部-->
+        <div id="foot" align="center">
+        	<p><a target="_blank" href="#">果仁简介</a><a target="_blank" href="#">About Peanut</a><a target="_blank" href="#">广告服务</a><a target="_blank" href="#">联系我们</a><a target="_blank" href="#">招聘信息</a><a target="_blank" href="#">网站律师</a><a target="_blank" href="#">Peanut English</a><a target="_blank" href="#">注册</a><a target="_blank" href="#">产品答疑</a></p>
+            <p>客户服务电话 400-690-0000  欢迎批评指正</p>
+            <p>Copyright &copy 1996 - PEANUT Corporation, All Rights Reserved 果仁公司 <a target="_blank" href="#">版权所有</a></p>
+        </div>
+      </div>
+    </div>
+<script>
+    var inp = document.getElementById('inputCode');
+    var code = document.getElementById('code');
+
+    var inp2 = document.getElementById('inputCode2');
+    var code2 = document.getElementById('code2');
+
+    var c = new KinerCode({
+        len: 4,//需要产生的验证码长度
+//        chars: ["1+2","3+15","6*8","8/4","22-15"],//问题模式:指定产生验证码的词典，若不给或数组长度为0则试用默认字典
+        chars: [
+            1, 2, 3, 4, 5, 6, 7, 8, 9, 0,
+            'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+            'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
+        ],//经典模式:指定产生验证码的词典，若不给或数组长度为0则试用默认字典
+        question:false,//若给定词典为算数题，则此项必须选择true,程序将自动计算出结果进行校验【若选择此项，则可不配置len属性】,若选择经典模式，必须选择false
+        copy: false,//是否允许复制产生的验证码
+        bgColor:"black",//背景颜色[与背景图任选其一设置]
+        bgImg:"bg.jpg",//若选择背景图片，则背景颜色失效
+        randomBg : false,//若选true则采用随机背景颜色，此时设置的bgImg和bgColor将失效
+        inputArea: inp,//输入验证码的input对象绑定【 HTMLInputElement 】
+        codeArea: code,//验证码放置的区域【HTMLDivElement 】
+        click2refresh:true,//是否点击验证码刷新验证码
+        false2refresh:true,//在填错验证码后是否刷新验证码
+        validateEven : "click",//触发验证的方法名，如click，blur等
+        validateFn : function(result,code){//验证回调函数
+           if(result){
+                alert('验证码正确');
+				
+            }else{
+				alert('验证码错误');
+                
+            }
+        }
+    });
+	</script>
+</body>
+</html>

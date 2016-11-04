@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>关于我们</title>
+<link href="../images/logo2.png" rel="shortcut icon">
+<script src="../js/jquery-3.1.0.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	function ch1(){
+		document.getElementById("mainleftbottom").style.display="block";
+	}
+	function ch2(){
+		document.getElementById("maincenter_1").style.display="block";
+		document.getElementById("maincenter_2").style.display="none";
+		document.getElementById("maincenter_3").style.display="none";
+		document.getElementById("maincenter0").style.display="none";
+		document.getElementById("aaa_1").style.color="#09F";
+		document.getElementById("aaa_2").style.color="#666";
+		document.getElementById("aaa_3").style.color="#666";
+	}
+	function ch3(){
+		document.getElementById("maincenter_2").style.display="block";
+		document.getElementById("maincenter_1").style.display="none";
+		document.getElementById("maincenter_3").style.display="none";
+		document.getElementById("maincenter0").style.display="none";
+		document.getElementById("aaa_1").style.color="#666";
+		document.getElementById("aaa_2").style.color="#09F";
+		document.getElementById("aaa_3").style.color="#666";
+	}
+	function ch4(){
+		document.getElementById("maincenter_3").style.display="block";
+		document.getElementById("maincenter_2").style.display="none";
+		document.getElementById("maincenter_1").style.display="none";
+		document.getElementById("maincenter0").style.display="none";
+		document.getElementById("aaa_1").style.color="#666";
+		document.getElementById("aaa_2").style.color="#666";
+		document.getElementById("aaa_3").style.color="#09F";
+	}
+	$(document).ready(function(e) {
+		$("#aaa").click(function(){
+			 
+			$("#mainleftbottom").slideToggle(); 		});
+	});
+</script>
+<style type="text/css">
+	* { margin:0px; padding:0px;}
+	a:link{ text-decoration:none; color:#666;}
+	#aaa:hover{ text-decoration:none; color:#666;}
+	a:hover{ text-decoration:underline;}
+	a:visited{ text-decoration:none;color:#666}
+	dt,dd {float:left; padding-left:50px; padding-bottom:50px;}
+	
+	ul,li {list-style:none; text-align:left; padding-top:20px;}
+	
+	#contaner { margin:0 auto; width:1150px;}
+	#header {width:100%; height:100px;; margin:0 auto;border-bottom:3px solid #F08905; }
+	#logo {float:left; margin-top:50px;}
+	#help {float:right;margin-top:75px;}
+	#help a{font-size:10px;}
+	
+	#line_1 { width:100%; height:3px;}
+	
+	#main { width:100%;  margin:0 auto;overflow: hidden; }
+	#mainleft {width:20%; height:600px; float:left;}
+	#mainleftbottom { display:none;}
+	#maincenter {width:55%;  float:left;}
+	#space {width:100%; height:40px;}
+	.year {margin-bottom:40px;}
+	.year_num {font-size:30px; color:#999999; line-height:30px; margin-bottom:10px; font-weight:100;}
+	.event_row {margin: 25px 0;}
+	.month_num {color:#999999 ;font-size:14px; position:absolute; line-height:150%;}
+	.event_title {color: #333333;font-size: 14px;line-height: 18px;vertical-align: top;margin-left: 50px;}
+	#maincenter0,#maincenter_1,#maincenter_2,#maincenter_3 {width:80%; margin:0 auto;}
+	#maincenter_1,#maincenter_2,#maincenter_3 { display:none;}
+	#mainright {width:25%; float:left;}
+	
+	#footer {width:60%; height:100px; margin:0 auto; text-align:center;}
+	#footer a { padding-left:15px;}
+</style>
+</head>
+
+<body>
+	<!--全局-->
+    <div id="contaner">
+        <!--头部-->
+        <div id="header">
+        	<div id="logo"><img src="../images/logo.gif"/></div>
+            <div id="help">            	
+                <a href="../index.html">首页</a>|<a href="" target="_blank">帮助</a>
+            </div>
+            
+        </div>
+        
+        <!--主体-->
+        <div id="main">
+            <!--主体左边部分-->
+            <div id="mainleft">
+            	<ul>
+                	<div id="mainlefttop" onclick="ch1()"><li><a href="#" id="aaa"><h2>About Peanut</h2></a></div>
+                    	<div id="mainleftbottom">
+                            <ul>
+                                <li><a href="#" id="aaa_1" onclick="ch2()">Group Overview</a></li>
+                                <li><a href="#" id="aaa_2" onclick="ch3()">Milestones</a></li>
+                                <li><a href="#" id="aaa_3" onclick="ch4()">Board of Directors</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--主体中间-->
+            <div id="maincenter">
+            	<div id="space"></div>
+                <div id="maincenter0">
+                	<h1 align="center">↑↑↓↓←→←→BABA</h1>
+                </div>
+                <div id="maincenter_1">
+                	<h3>The booming Internet in China</h3><br/>
+                    <p>You don’t need us to tell you that China’s Internet space is booming. With the world’s largest Internet user population—686 million as of January 2016—and a long way to go to reach Internet penetration levels of developed countries, China’s Internet industry is growing in both scale and influence. And as more and more Chinese users come online, Peanut continues to innovate to meet their changing needs and diverse tastes. We aim to serve the needs of our users and customers with products and solutions that prioritize the user experience and reflect our corporate culture – simple and reliable.</p><br/>
+                    <h3>The origin of Peanut’s name</h3><br/>
+                    <p>Our name was inspired by the nickname of ZhaoPeng</p>
+                </div>
+                <div id="maincenter_2">
+                	<div class="year">
+                    	<span class="year_num">2016</span>
+                        <div class="event_row">
+                        	<span class="month_num">APR</span>
+                            <span class="event_title">Peanut Encyclopedia celebrated its 10th anniversary</span>
+                        </div>
+                    </div>
+                    <div class="year">
+                        <span class="year_num">2015</span>
+                        <div class="event_row">
+                        	<span class="month_num">DEC</span>
+                            <span class="event_title">Peanut Maps celebrated its 10th anniversary; monthly active users reached 302 million</span>
+                        </div>
+                        <div class="event_row">
+                        	<span class="month_num">NOV</span>
+                            <span class="event_title">Peanut included in MSCI</span>
+                        </div>
+                        <div class="event_row">
+                        	<span class="month_num">OCT</span>
+                            <span class="event_title">Peanut completed Qunar share exchange with Ctrip</span>
+                        </div>
+                        <div class="event_row">
+                        	<span class="month_num">JUN</span>
+                            <span class="event_title">Daily active users of Mobile Peanut search app reached 100 million; daily Peanut universal logins reached 100 million</span>
+                        </div>
+                        <div class="event_row">
+                        	<span class="month_num">MAR</span>
+                            <span class="event_title">Mobile revenue reached 50% of total revenue</span>
+                        </div>
+                    </div>
+                    <div class="year">
+                    	<span class="year_num">2014</span>
+                        <div class="event_row">
+                        	<span class="month_num">MAY</span>
+                            <span class="event_title">Peanut opened its U.S. R&D Center in Sunnyvale, California</span>
+                        </div>
+                        <div class="event_row">
+                        	<span class="month_num">MAY</span>
+                            <span class="event_title">Peanut launched Peanut Takeout Delivery</span>
+                        </div>
+                        <div class="event_row">
+                        	<span class="month_num">APR</span>
+                            <span class="event_title">Peanut launched Peanut Wallet</span>
+                        </div>
+                    </div>
+                    <div class="year">
+                    	<span class="year_num">2013</span>
+                        <div class="event_row">
+                        	<span class="month_num">DEC</span>
+                            <span class="event_title">Peanut Postbar celebrated its 10th anniversary</span>
+                        </div>
+                        <div class="event_row">
+                        	<span class="month_num">OCT</span>
+                            <span class="event_title">Peanut acquired a 100% equity interest in 91 Wireless from NetDragon for US$1.9 billion</span>
+                        </div>
+                        <div class="event_row">
+                        	<span class="month_num">AUG</span>
+                            <span class="event_title">Peanut acquired a 59% equity interest in Nuomi from Renren for US$160 million (Peanut subsequently acquired the remaining shares of Nuomi in Jan 2014)</span>
+                        </div>
+                        <div class="event_row">
+                        	<span class="month_num">MAY</span>
+                            <span class="event_title">Peanut acquired the online video business of PPS for US$370 million, merged PPS with Peanut’s subsidiary video platform iQiyi</span>
+                        </div>
+                    </div>
+                    <div class="year">
+                    	<span class="year_num">2012</span>
+                        <div class="event_row">
+                        	<span class="month_num">NOV</span>
+                            <span class="event_title">Peanut acquired a controlling interest in iQiyi</span>
+                        </div>
+                    </div>
+                    <div class="year">
+                    	<span class="year_num">2011</span>
+                        <div class="event_row">
+                        	<span class="month_num">JULY</span>
+                            <span class="event_title">Peanut acquired a majority stake in Qunar for US$306 million</span>
+                        </div>
+                    </div>
+                    <div class="year">
+                    	<span class="year_num">2010</span>
+                        <div class="event_row">
+                        	<span class="month_num">APR</span>
+                            <span class="event_title">Peanut changed the ratio of its ADSs representing Class A ordinary shares from 1 ADS for 1 share to 10 ADS for 1 share</span>
+                        </div>
+                        <div class="event_row">
+                        	<span class="month_num">FEB</span>
+                            <span class="event_title">Peanut established a new independent company Qiyi (currently known as iQiyi), an online video platform through joint venture with Providence Equity Partners</span>
+                        </div>
+                    </div>
+                    <div class="year">
+                    	<span class="year_num">2009</span>
+                        <div class="event_row">
+                        	<span class="month_num">NOV</span>
+                            <span class="event_title">Peanut moved into new headquarters “Peanut Campus” in Shangdi, an area designated by the Beijing municipal government as Beijing’s information technology industry center</span>
+                        </div>
+                        <div class="event_row">
+                        	<span class="month_num">APR</span>
+                            <span class="event_title">Peanut launched the online marketing system Phoenix Nest</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="maincenter_3">
+                	<dl>
+                        <dt><img src="/images/header/111.jpg"/></dt>
+                        <dd>姓名：郑志伟<br/><br/><a href="user/userDetail/zhengzhiwei.html" target="_blank">点击查看详情</a></dd>
+    				</dl>
+                    <dl>
+                        <dt style="clear:both"><img src="/images/header/111.jpg"/></dt>
+                        <dd>姓名：赵鹏<br/><br/><a href="user/userDetail/zhaopeng.html" target="_blank">点击查看详情</a></dd>
+    				</dl>
+                    <dl>
+                        <dt style="clear:both"><img src="/images/header/111.jpg"/></dt>
+                        <dd>姓名：王也<br/><br/><a href="user/userDetail/wangye.html" target="_blank">点击查看详情</a></dd>
+    				</dl>
+                </div>
+            </div>
+            <!--主体右边部分-->
+            <div id="mainright">
+            </div>
+        </div>
+        <!--尾部-->
+        <div id="footer">
+        	<p><a target="_blank" href="#">果仁简介</a><a target="_blank" href="#">About P-Nuts</a><a target="_blank" href="#">广告服务</a><a target="_blank" href="#">联系我们</a><a target="_blank" href="#">招聘信息</a><a target="_blank" href="#">网站律师</a><a target="_blank" href="#">Peanut English</a><a target="_blank" href="#">注册</a><a target="_blank" href="#">产品答疑</a></p>
+            <p>客户服务电话 400-690-0000  欢迎批评指正</p>
+            <p>Copyright &copy 1996 - PEANUT Corporation, All Rights Reserved 果仁公司 <a target="_blank" href="#">版权所有</a></p>
+        </div>
+    </div>
+</body>
+</html>

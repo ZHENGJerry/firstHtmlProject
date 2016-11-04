@@ -1,0 +1,81 @@
+* {margin:0px; padding:0px;}
+span {color:red;}
+#foot a { padding-left:15px;}
+.tdr {text-align:right;}
+body{ background-image: url(../images/index_bg1.png);
+    background-position: 0px 0px;
+    background-repeat: repeat;
+    animation: animatedBackground 44s linear infinite;}
+@keyframes animatedBackground {
+  from { background-position: 0 0; }
+  to { background-position: 100% 0; }
+  }
+#conainer{}
+/*头*/
+#all {margin:0 auto; height:1000px; width:100%;}
+#head {margin:0 auto; height:75px; width:100%; }
+#logo {float:left; margin-top:50px;}
+#help {float:right;margin-top:75px;}
+#help a{font-size:10px;}
+#head_center {margin:0 auto;height:80px; width:100%;}
+
+
+#line_1 { width:100%; height:3px; border:0;background-color:#F08905;}
+
+/*中间*/
+#main {margin:0 auto; height:600px; width:100%; background-color:#fff;}
+#main_top { height:60px;padding:18px 0 0;}
+#main_tab {border-bottom:1px solid #D9D9D9;height:39px;padding-left:20px;}
+#main_tab a {position:relative;float:left;margin-right:12px;border:1px solid #d9d9d9;padding:0 35px;font-size:14px;line-height:38px;color:#323232;text-decoration:none;border-bottom:0px solid 					                 #fff;}
+#main_tab a:hover{text-decoration:none;}
+
+#main_left {height:500px; width:50%; float:left; background-color:#fff;}
+#reg_phone { height:500px; padding-top:20px;}
+#reg_email  { height:500px;padding-top:20px;display:none;}
+#table_ph { height:400px; margin:0 auto;}
+#table_em { height:400px; margin:0 auto;}
+#submit,#submit1,#haveAccount{float: left;}
+#haveAccount{display: block;padding-top:15px;}
+#main_right {height:500px; width:50%; float:left; background-color:#fff; padding-top:25px;}
+
+
+
+
+
+/*下边*/
+#foot {margin:0 auto; height:100px; width:60%; background-color:#fff;}
+
+
+
+/* 覆盖*/
+#cover1 { background-color:#fff; position:absolute; height:5px; width:126px; left:402px; top:173px;}
+#cover2 {background-color:#fff;position:absolute;height:5px; width:126px; top:175px; left:542px;display:none;}
+
+
+
+#qiangdu1 {display:none;}
+#qiangdu2 {display:none;}
+#qiangdu3 {display:none;}
+#qiangdu1_1 {display:none;}
+#qiangdu2_1 {display:none;}
+#qiangdu3_1 {display:none;}
+
+#sentmsg{
+	top: 0;
+	right: 0;
+	width: 150px;
+	height: 28px;
+	font-size: 18px;
+	background-color: #e35437;
+	color: #fff;
+}
+#sentmsg[disabled]{
+	background-color: #B6B6B6;
+}
+
+.mycode{
+            display: inline-block;
+            width: 80px;
+            height: 40px;
+            vertical-align: middle;
+        }
